@@ -23,9 +23,9 @@ export default async function CarouselMovie() {
               quality={80}
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-start p-6 z-20 text-white">
-              <div className="w-1/3 ml-20">
+              <div className="w-full p-8 md:p-0 md:w-1/3 md:ml-20">
                 <h2 className="text-4xl font-bold mb-2">{movie.title}</h2>
-                <p className="flex gap-2 mb-5">
+                <p className="flex gap-2 mb-5 text-clip">
                   {movie.genre_ids.map((genreId, index) => (
                     <span key={genreId}>
                       {genres[genreId]}
@@ -35,10 +35,12 @@ export default async function CarouselMovie() {
                   <span>|</span>
                   <span>{movie.release_date.split("-")[0]}</span>
                 </p>
-                <p className="text-slate-50/90 mb-10">{movie.overview}</p>
+                <p className="w-full text-slate-50/90 mb-10 line-clamp-3 md:line-clamp-none">
+                  {movie.overview}
+                </p>
                 <Link
                   href={`/movie/${movie.id}`}
-                  className="flex gap-4 px-6 py-3 rounded justify-center items-center w-fit bg-slate-50/20 hover:bg-slate-50/30 transition-all duration-300"
+                  className="flex gap-4 px-6 py-3 rounded justify-center items-center w-full md:w-fit bg-slate-50/20 hover:bg-slate-50/30 transition-all duration-300"
                 >
                   <div className="w-10 h-10 bg-red-600 flex justify-center items-center rounded-full">
                     <svg
