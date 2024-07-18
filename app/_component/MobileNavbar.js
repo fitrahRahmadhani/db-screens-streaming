@@ -63,7 +63,6 @@ function MobileNavbar() {
                 className="flex flex-row items-center gap-4 p-2 w-full"
                 onClick={handleMobileMenuToggle}
               >
-                {link.icon}
                 {link.label}
               </Link>
             </li>
