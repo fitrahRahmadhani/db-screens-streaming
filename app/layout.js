@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./_component/Header";
 import Footer from "./_component/Footer";
-import CarouselMovie from "./_component/Carousel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,10 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className}`}>
         <Header />
-        <main className="relative overflow-hidden">
-          <CarouselMovie />
-          {children}
-        </main>
+        <main className="relative overflow-hidden">{children}</main>
         <Footer />
       </body>
     </html>

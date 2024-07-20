@@ -63,3 +63,46 @@ export const NAV_LINKS = [
     ),
   },
 ];
+export const PUB_LIST = [
+  {
+    name: "Marvel Studios",
+    imgPath:
+      "/marvel-studios-white-logo-png-image-701751694711682mfvm33nvva-removebg-preview.png",
+  },
+  {
+    name: "DC Comics",
+    imgPath: "/dc-removebg-preview.png",
+  },
+  {
+    name: "Amazon Studio",
+    imgPath: "/amazon-removebg-preview.png",
+  },
+  {
+    name: "Dream Works",
+    imgPath: "/images__1_-removebg-preview.png",
+  },
+  {
+    name: "Columbia Pictures",
+    imgPath: "/columbia-pictures-symbol-removebg-preview.png",
+  },
+  {
+    name: "Universal Studio",
+    imgPath: "/images-removebg-preview.png",
+  },
+  {
+    name: "Paramount",
+    imgPath: "/paramount-removebg-preview.png",
+  },
+  {
+    name: "Netflix",
+    imgPath: "/images__2_-removebg-preview.png",
+  },
+  {
+    name: "Disney",
+    imgPath: "/disney-removebg-preview.png",
+  },
+  {
+    name: "Metro Goldwyn Mayer",
+    imgPath: "/[CITYPNG.COM]HD White Metro Goldwyn Mayer MGM Logo PNG -.png",
+  },
+];
